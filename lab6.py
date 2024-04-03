@@ -43,12 +43,13 @@ def z3():
     chinese = []
     for student, language in sudents_lang.items():
         languages.update(language)
-
+#ищем студентов, которые знают китайский язык.
         if 'китайский' in language:
             chinese.append(student)
+#отсортированный список этих языков.
     sortedlang = sorted(languages)
     print(f'Языки, которые знают студенты: {sortedlang}')
-
+#список студентов, которые знают китайский язык.
     print(f'Студенты, знающие китайский:{", ". join (chinese)}')
 #print(z3())
 
