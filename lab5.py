@@ -21,7 +21,6 @@ def z2():
 
 def z3():
     week = ("Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье")
-    weekendnumber = int(input("Сколько выходных на неделе Вы хотите?"))
     weekend = week[-weekendnumber:]
     work = week[:-weekendnumber]
     print("Ваши выходные дни:", ",".join(weekend))
@@ -46,4 +45,6 @@ def z4():
         print(f"Количество Ивановых:{sportteam.count(surname)}")
     else:
         print("Фамилия Иванов не входит в спортивную команду.")
-print (z4())
+#print (z4())
+
+
