@@ -26,3 +26,22 @@ def z3():
         imgfilt = image.filter(ImageFilter.CONTOUR)
         imgfilt.save('filters/'+str(img))
 z3()
+def z4():
+    from PIL import Image, ImageFilter
+    filename = "buildings.jpg"
+    logo ="realpython-logo.png"
+    with Image.open(logo) as img_logo:
+        img_logo.load()
+
+    img_logo = Image.open(logo)
+    img_logo = img_logo.convert("L")
+    threshold = 50
+    img_logo = img_logo.point(lambda x:255 if x > threshold else 0)
+    img_logo = img_logo.reduce(2)
+    img_logo_filt = img_logo.filter(ImageFilter.CONTOUR)
+    img_logo_filt = img_logo_filt.point(lambda x: 0 if x == 255 else 255)
+    img_logo_filt.show()
+    with Image.open(filename) as img:
+        img.paste(img_logo_filt, (480, 160), img_logo_filt)
+        img.show()
+z4()
