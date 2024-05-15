@@ -1,0 +1,82 @@
+{
+    "products": [
+        {
+            "name": "\u0420\u0401\u0420\u0455\u0420\u0454\u0420\u0455\u0420\u00bb\u0420\u00b0\u0420\u0491",
+            "price": 50,
+            "available": true,
+            "weight": 100
+        },
+        {
+            "name": "\u0420\u0459\u0420\u0455\u0421\u201e\u0420\u00b5",
+            "price": 100,
+            "available": false,
+            "weight": 250
+        },
+        {
+            "name": "\u0420\u00a7\u0420\u00b0\u0420\u2116",
+            "price": 70,
+            "available": true,
+            "weight": 50
+        },
+        {
+            "name": "vze",
+            "price": 5.0,
+            "weight": "4",
+            "available": true
+        },
+        {
+            "name": "vjkjrj",
+            "price": 6.0,
+            "weight": "6",
+            "available": true
+        },
+        {
+            "name": "\u043f",
+            "price": 5.0,
+            "weight": "6",
+            "available": true
+        },
+        {
+            "name": "5",
+            "price": 5.0,
+            "weight": "6",
+            "available": true
+        },
+        {
+            "name": "\u043f\u0433",
+            "price": 6.0,
+            "weight": "6",
+            "available": false
+        },
+        {
+            "name": "6",
+            "price": 6.0,
+            "weight": "6",
+            "available": false
+        },
+        {
+            "name": "6",
+            "price": 6.0,
+            "weight": "6",
+            "available": false
+        },
+        {
+            "name": "\u043f",
+            "price": 22.0,
+            "weight": "8",
+            "available": true
+        },
+        {
+            "name": "\u0440",
+            "price": 6.0,
+            "weight": "6",
+            "available": true
+        },
+        {
+            "name": "\u043a",
+            "price": 3.0,
+            "weight": "3",
+            "available": true
+        }
+    ]
+}
