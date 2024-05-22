@@ -30,20 +30,12 @@ z2()
 
 def z3():
     from PIL import Image, ImageDraw, ImageFont
-    filename = "otkritka.jpg"
-    with Image.open(filename) as img:
-        img.load()
-        img_crop = img.crop((200, 400, 600, 950))
-        img_crop.show()
-        img_crop.save("otkritka_crop.jpg")
-        name = input("Введите имя:")
-        draw = ImageDraw.Draw(img_crop)
-        font = ImageFont.load_default()
-
-        text = f"{name}, поздравляю!"
-        text_color = (0, 0, 0)
-        text_position = (50, img_crop.height - 50)
-        draw.text(text_position, text, font=font, fill=text_color)
-#проблема со шрифтом!!!
-        img_crop.save("new_card.png")
+    name = input("Введите имя:")
+    image = Image.open("otkritka.jpg")
+    font = ImageFont.truetype("arial.ttf", 25)
+    drawer = ImageDraw.Draw(image)
+    drawer.text((50,18), name, font=font, fill='black')
+    drawer.text((150, 18), ", поздравляю!", font=font, fill='black')
+    image.save("new_card.png")
+    image.show()
 z3()
