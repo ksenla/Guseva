@@ -70,3 +70,36 @@ def z2():
     newIceCreamStand.stick_flavors()
     newIceCreamStand.soft_flavors()
 z2()
+def z3():
+    import tkinter as tk
+
+    class IceCreamStand:
+        def __init__(self, flavors):
+            self.flavors = flavors
+
+            self.root = tk.Tk()
+            self.root.title("IceCreamStand")
+
+            self.label = tk.Label(self.root, text="Выберите вкус мороженого:")
+            self.label.pack()
+
+            self.flavor_var = tk.StringVar(self.root)
+            self.flavor_var.set(self.flavors[0])
+
+            self.flavor_dropdown = tk.OptionMenu(self.root, self.flavor_var, *self.flavors)
+            self.flavor_dropdown.pack()
+
+            self.order_button = tk.Button(self.root, text="Заказать", command=self.place_order)
+            self.order_button.pack()
+
+        def place_order(self):
+            selected_flavor = self.flavor_var.get()
+            print(f"Заказан вкус мороженого: {selected_flavor}")
+
+        def run(self):
+            self.root.mainloop()
+
+    flavors_list = ["Шоколадное", "Ванильное", "Фисташковое"]
+    ice_cream_stand = IceCreamStand(flavors_list)
+    ice_cream_stand.run()
+z3()
